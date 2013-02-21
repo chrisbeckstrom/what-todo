@@ -1,0 +1,37 @@
+CB'S WHAT TO DO? SCRIPT
+
+WHAT IT DOES
+This simple little script connects to a MySQL database and grabs info
+from your myTinyTodo database.
+
+myTinyTodo is an awesome open-source todo list, written in PHP by
+Max Pozdeev. You can get it here:
+http://www.mytinytodo.net/
+
+DEPENDENCIES
+* A myTinyTodo installation
+* PHP (tested on 5.3)
+* MySQL php module (so php can talk to mysql)
+
+INSTALLATION
+Just grab the php file and change the configuration info to your own.
+
+HOW TO USE IT
+Simply run php todo.php and the script will spit out un-completed items
+from your todo list, list id 1 by default. It spits the output to stdout,
+but also writes the results to a file.
+
+Now that I think about it, running php todo.php >> somefile.txt might
+work just as well, but then you wouldn't see the results in stdout.
+
+WHY?
+I wrote the script so I could get an up-to-date list of my todo items
+in Conky. I run the script every minute via cron, and Conky reads the
+file every minute.
+
+NOTE
+I'm a super newbie programmer, so there are probably a million things
+I could have done more efficiently. Go easy!
+
+Chris Beckstrom
+chrisbeckstrom@gmail.com
