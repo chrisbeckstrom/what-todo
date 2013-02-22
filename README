@@ -4,8 +4,7 @@ WHAT IT DOES
 This simple little script connects to a MySQL database and grabs info
 from your myTinyTodo database.
 
-myTinyTodo is an awesome open-source todo list, written in PHP by
-Max Pozdeev. You can get it here:
+myTinyTodo is an awesome open-source web-based todo list, written in PHP by Max Pozdeev. You can get it here:
 http://www.mytinytodo.net/
 
 DEPENDENCIES
@@ -23,6 +22,16 @@ but also writes the results to a file.
 
 Now that I think about it, running php todo.php >> somefile.txt might
 work just as well, but then you wouldn't see the results in stdout.
+
+WHAT THE FILES DO
+todo.php
+	the php script that connects to the DB and grabs your todo items
+	
+config.dist.php
+	the default configuration file- copy this to config.php and edit it according to your settings
+	
+README
+	this file
 
 WHY?
 I wrote the script so I could get an up-to-date list of my todo items
